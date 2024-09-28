@@ -30,13 +30,6 @@ span {
     gap: 1rem;
 }
 
-.image_container {
-    height: 100px;
-    background: url(https://placehold.co/600x400?text=News+Story) no-repeat center center;
-    object-fit: contain;
-    background-size: cover;
-}
-
 .image {
     width: 150px;
     height: 100px;

@@ -11,6 +11,8 @@ export default function Story({ news }) {
     }
   }
 
+  const imageUrl = news.image_url || 'https://placehold.co/600x400?text=News+Story';
+
   return (
     <div className="feed" onClick={handleDelete}>
       <div className="close">
@@ -19,7 +21,7 @@ export default function Story({ news }) {
       <div className="all_content">
         <div className="main_container">
           <div className="image_container">
-            <img className="image" src={news.image_url}/>
+          <img className="image" src={imageUrl} alt={news.title} />
           </div>
           <div className="info">
             <a className= "title" href={news.link} target="_blank">{news.title}</a>
